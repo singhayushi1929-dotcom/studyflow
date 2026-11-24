@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StudyFlow — Make room for your future</title>
+  <meta name="description" content="A personal study space to plan, focus, and grow.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="nav-wrap"><nav class="nav shell">
+    <a class="brand" href="#home"><span class="brand-mark">✦</span> studyflow<span class="brand-dot">.</span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+    <div class="nav-links"><a href="#story">About</a><a href="#dashboard">Dashboard</a><a href="#planner">Planner</a><a href="#focus">Focus</a><a href="#insights">Insights</a></div>
+    <a class="nav-cta" href="#planner">Plan my day <span>↗</span></a>
+  </nav></header>
+  <main>
+    <section class="hero shell" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR SPACE TO LEARN & GROW</div>
+        <h1>Make room<br>for your <em>future.</em></h1>
+        <p class="hero-sub">A little progress every day adds up to something extraordinary. Make your goals feel closer, one focused session at a time.</p>
+        <div class="hero-actions"><a class="btn-primary" href="#dashboard">Explore my space <span>↗</span></a><a class="quiet-link" href="#story">Discover StudyFlow <span>↓</span></a></div>
+        <div class="hero-proof"><div class="avatars"><span>✷</span><span>✦</span><span>☾</span></div><div><strong>Your own rhythm.</strong><small>Plan · Focus · Reflect</small></div></div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="hero-orbit orbit-a"></div><div class="hero-orbit orbit-b"></div>
+        <div class="hero-star star-a">✦</div><div class="hero-star star-b">✧</div><div class="hero-star star-c">✳</div>
+        <div class="hero-planet"><div class="planet-inner"><div class="planet-crater c1"></div><div class="planet-crater c2"></div><div class="planet-crater c3"></div><div class="planet-glow"></div></div></div>
+        <div class="floating-note note-top"><span class="note-icon">◷</span><div><b>25 min focus</b><small>You're on a roll!</small></div></div>
+        <div class="floating-note note-bottom"><span class="note-icon mint">✓</span><div><b>Small steps count</b><small>2 tasks completed today</small></div></div>
+        <div class="hero-caption">A softer way to stay on track <span>01 / 06</span></div>
+      </div>
+    </section>
+    <section class="ticker"><div class="ticker-track"><span>MAKE PROGRESS</span> ✦ <span>FIND YOUR FOCUS</span> ✦ <span>KEEP GROWING</span> ✦ <span>MAKE PROGRESS</span> ✦ <span>FIND YOUR FOCUS</span> ✦ <span>KEEP GROWING</span> ✦</div></section>
+
+    <section class="story section shell" id="story">
+      <div class="section-kicker reveal">01 — THE IDEA</div><div class="story-grid">
+        <h2 class="reveal">Not a race.<br><span>A rhythm.</span></h2>
+        <div class="story-text reveal"><p>StudyFlow is your little corner of calm in a busy student life. Bring your subjects, assignments, plans, and ambitions together—then take the next step at your own pace.</p><a href="#planner" class="underline-link">Build a routine that feels right <span>↗</span></a></div>
+      </div>
+      <div class="story-strip reveal"><div class="strip-item"><span>01</span><b>Clear the clutter</b><small>Keep your tasks in one place.</small></div><div class="strip-item"><span>02</span><b>Show up for yourself</b><small>Make time for focused work.</small></div><div class="strip-item"><span>03</span><b>Celebrate the small</b><small>Notice the progress you make.</small></div></div>
+    </section>
+
+    <section class="dashboard-section section" id="dashboard"><div class="shell">
+      <div class="section-head reveal"><div><div class="section-kicker">02 — YOUR OVERVIEW</div><h2>Today, at a glance.</h2><p>Welcome back. Let's make today count.</p></div><div class="date-pill" id="today-date">Today ✦</div></div>
+      <div class="stats-grid reveal"><article class="stat-card stat-lilac"><span class="stat-label">Study time this week</span><strong id="total-hours">0h 0m</strong><div class="stat-foot">Your time, thoughtfully spent <span>◷</span></div><div class="mini-bars"><i style="height:25%"></i><i style="height:48%"></i><i style="height:35%"></i><i style="height:70%"></i><i style="height:45%"></i><i style="height:88%"></i><i style="height:55%"></i></div></article>
+        <article class="stat-card stat-dark"><span class="stat-label">Tasks completed</span><strong><span id="done-count">0</span><small> / <span id="task-count">0</span></small></strong><div class="progress-track"><div class="progress-fill" id="task-progress"></div></div><div class="stat-foot">Keep moving, one at a time <span>✦</span></div></article>
+        <article class="stat-card stat-mint"><span class="stat-label">Subjects in orbit</span><strong id="subject-count">0</strong><div class="stat-foot">Curiosity is your superpower <span>✧</span></div><div class="mint-spark">✳</div></article>
+        <article class="stat-card stat-peach"><span class="stat-label">Focus sessions</span><strong id="session-count">0</strong><div class="stat-foot">A moment for deep work <span>◎</span></div><div class="peach-circle">◌</div></article></div>
+      <div class="dashboard-lower"><div class="panel subjects-panel reveal"><div class="panel-heading"><div><span class="section-kicker">YOUR LEARNING</span><h3>Subjects in progress</h3></div><button class="text-button" id="add-subject">+ Add subject</button></div><div id="subjects-list" class="subjects-list"></div></div>
+      <div class="panel task-panel reveal"><div class="panel-heading"><div><span class="section-kicker">YOUR CHECKLIST</span><h3>Today's little wins</h3></div><a href="#planner" class="text-button">All tasks ↗</a></div><div id="dashboard-tasks" class="dashboard-tasks"></div></div></div>
+    </div></section>
+
+    <section class="planner-section section shell" id="planner"><div class="section-head reveal"><div><div class="section-kicker">03 — MAKE A PLAN</div><h2>Give your goals a place.</h2><p>Write it down. Make it real. Check it off.</p></div><button class="btn-outline" id="new-task">＋ Add a task</button></div>
+      <div class="planner-grid"><div class="planner-main panel reveal"><div class="planner-toolbar"><div class="day-selector"><button class="day-arrow" id="prev-day">‹</button><strong id="plan-day-label">Today</strong><button class="day-arrow" id="next-day">›</button></div><span class="soft-tag">YOUR TO-DO LIST</span></div><div id="planner-task-list" class="planner-task-list"></div><div class="add-task-inline" id="inline-add">＋ Add another task</div></div>
+      <aside class="planner-side reveal"><div class="quote-card"><span class="quote-mark">“</span><blockquote id="quote">You don't have to see the whole staircase. Just take the first step.</blockquote><div class="quote-author">— YOUR DAILY REMINDER</div><button id="new-quote" class="quote-refresh">↻ New thought</button></div><div class="goal-card"><div class="goal-top"><span class="section-kicker">WEEKLY INTENTION</span><span>✧</span></div><h3>Make consistency<br>your superpower.</h3><p>Set a small goal for this week. Progress loves a plan.</p><div class="goal-input-row"><input id="weekly-goal-input" placeholder="e.g. Study 5 hours this week"><button id="save-goal">↗</button></div><div class="saved-goal" id="saved-goal"></div></div></aside></div>
+    </section>
+
+    <section class="timetable-section section"><div class="shell"><div class="section-head reveal"><div><div class="section-kicker">04 — FIND YOUR FLOW</div><h2>A week with intention.</h2><p>A flexible timetable to give your days a little shape.</p></div><div class="soft-tag">SAMPLE WEEK</div></div><div class="timetable panel reveal"><div class="time-col"><div class="time-head">TIME</div><span>Morning</span><span>Afternoon</span><span>Evening</span></div><div class="timetable-days" id="timetable-days"></div></div><p class="timetable-note">✦ Move things around whenever life happens. This is a guide, not a rulebook.</p></div></section>
+
+    <section class="focus-section section" id="focus"><div class="shell focus-grid"><div class="focus-copy reveal"><div class="section-kicker">05 — THE FOCUS ZONE</div><h2>One thing.<br><em>Right now.</em></h2><p>Give one task your full attention. Take a breath, settle in, and begin. You can do more than you think in a little time.</p><div class="focus-bullets"><span>✦ Distraction-free moment</span><span>✦ Gentle break reminders</span><span>✦ Celebrate each session</span></div></div><div class="timer-card reveal"><div class="timer-top"><span>FOCUS RITUAL</span><span class="live-dot">● READY</span></div><div class="timer-tabs"><button class="timer-tab active" data-min="25">Focus</button><button class="timer-tab" data-min="5">Short break</button><button class="timer-tab" data-min="15">Long break</button></div><div class="timer-ring"><svg viewBox="0 0 220 220"><circle class="ring-bg" cx="110" cy="110" r="96"></circle><circle class="ring-progress" cx="110" cy="110" r="96"></circle></svg><div class="timer-display"><strong id="timer-display">25:00</strong><small id="timer-caption">TIME TO FOCUS</small></div></div><div class="timer-controls"><button class="timer-start" id="timer-start">▶ Start focus</button><button class="timer-reset" id="timer-reset">↻</button></div><div class="timer-hint">Your focus session is just for you. ✦</div></div></div></section>
+    <section class="insights-section section shell" id="insights"><div class="section-head reveal"><div><div class="section-kicker">06 — LOOK HOW FAR</div><h2>Your progress tells a story.</h2><p>Every minute counts. Every task is a little win.</p></div><span class="soft-tag">WEEKLY VIEW</span></div><div class="insights-grid"><div class="chart-panel panel reveal"><div class="panel-heading"><div><span class="section-kicker">STUDY ACTIVITY</span><h3>Your week in focus</h3></div><span class="chart-total" id="chart-total">0 min</span></div><div class="chart" id="weekly-chart"></div><div class="chart-legend"><span><i></i> Focus time</span><small>Minutes tracked in StudyFlow</small></div></div><div class="insight-card reveal"><div class="insight-orb">✦</div><span class="section-kicker">A NOTE TO YOU</span><h3>Slow progress is still progress.</h3><p>You are building habits, not just finishing a checklist. Keep giving yourself credit for showing up.</p><a href="#planner" class="underline-link">Back to your plan ↗</a></div></div></section>
+    <section class="tips-section section"><div class="shell"><div class="section-head reveal"><div><div class="section-kicker">07 — LITTLE WAYS TO LEARN</div><h2>Study smarter, gently.</h2><p>Small strategies can make your study time feel more meaningful.</p></div></div><div class="tips-grid"><article class="tip-card reveal"><span class="tip-number">01 / RESET</span><div class="tip-icon">☼</div><h3>Start ridiculously small.</h3><p>Choose one tiny step. Opening your notes and reading a page is a valid start.</p></article><article class="tip-card reveal"><span class="tip-number">02 / RECALL</span><div class="tip-icon">✎</div><h3>Test what you know.</h3><p>Close the book and explain a concept from memory. Retrieval helps strengthen learning.</p></article><article class="tip-card reveal"><span class="tip-number">03 / REST</span><div class="tip-icon">☾</div><h3>Take real breaks.</h3><p>Stretch, drink water, or step away from the screen. Rest is part of learning.</p></article><article class="tip-card reveal"><span class="tip-number">04 / REPEAT</span><div class="tip-icon">↗</div><h3>Return tomorrow.</h3><p>Revisit topics over time instead of trying to do everything in one sitting.</p></article></div></div></section>
+    <section class="closing-section"><div class="closing-stars">✦　　　✧　　　 ✳　　　　 ✦</div><div class="closing-content reveal"><div class="section-kicker">YOUR NEXT CHAPTER STARTS HERE</div><h2>Dream big.<br><em>Begin small.</em></h2><p>Make today a day you showed up for yourself.</p><a class="btn-primary" href="#planner">Make a little plan <span>↗</span></a></div><div class="closing-bottom">STUDYFLOW <span>MADE FOR YOUR GROWING MIND ✦</span></div></section>
+  </main>
+  <footer class="footer shell"><a class="brand" href="#home"><span class="brand-mark">✦</span> studyflow<span class="brand-dot">.</span></a><span>Plan with care. Learn with curiosity. © <span id="year"></span></span><a href="#home">Back to top ↑</a></footer>
+  <dialog id="task-dialog"><form method="dialog" class="dialog-form" id="task-form"><button class="dialog-close" aria-label="Close">×</button><span class="section-kicker">A SMALL STEP</span><h3>Add a task</h3><label>What would you like to do?<input id="task-title" maxlength="100" required placeholder="e.g. Revise calculus notes"></label><label>Subject<input id="task-subject" maxlength="40" placeholder="e.g. Mathematics"></label><label>Priority<select id="task-priority"><option>Normal</option><option>Important</option><option>Low pressure</option></select></label><button class="btn-primary dialog-submit" id="submit-task" value="add">Save task ↗</button></form></dialog>
+  <dialog id="subject-dialog"><form method="dialog" class="dialog-form" id="subject-form"><button class="dialog-close" aria-label="Close">×</button><span class="section-kicker">NEW SUBJECT</span><h3>Add a subject</h3><label>Subject name<input id="subject-name" maxlength="40" required placeholder="e.g. Physics"></label><label>Progress (0–100)<input id="subject-progress" type="number" min="0" max="100" value="0"></label><button class="btn-primary dialog-submit" value="add">Add subject ↗</button></form></dialog>
+  <script src="script.js"></script>
+</body></html>
